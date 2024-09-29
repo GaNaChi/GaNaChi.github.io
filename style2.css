@@ -1,0 +1,97 @@
+
+body {font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    font-size: 1.5vw; /*using vw allows the font to take a particualr percentage of the screen, which makes ot flexible to any screen without us having to manually fix the font size for each screen */
+}
+/* we can edit our website, but it'll only be a change local to our computer and temporary aswell. after refreshing the page, things will go back to normal. changes will not occur */
+#logo{
+ margin: 0px;
+ padding: 8px;
+ font-family: "Fredoka One", sans-serif;
+ box-shadow: 10px 8px 10px 3px lightblue;
+ width:15%;
+ border-radius: 30%;
+ text-shadow: 
+/* 1px 1px 0px black, /*bottom right shadow*/
+/* -1px 1px 0px black, /*bottom left shadow*/
+/* 1px 1px 0px black, /*top right shadow*/
+/* -1px 1px 0px black; /*top left shadow*/
+ 
+}
+ul{
+ margin: 0px;
+}
+body > header {
+ background-color: lightcyan;
+ color: rgb(0, 102, 255); /*can also use hexadecimal values from #00 to #ff* eg #99ffaa. check lolcolours website for colour pallets for your website*/
+ display: flex; /*can create navigation tools horizontally or vertically*/
+ height: 12vh ;
+ align-items: center;
+ justify-content: space-around;
+}
+#nav-ul {
+ display:flex;
+}
+#nav-ul>li{
+ padding: 8px;
+ margin:16px;
+}
+/*  child selector: direct descendant of the parent tag. this shows a direct child of the body tag, which is the specific header we want to highlight in this instance */
+
+body > header > nav > ul{
+ list-style: none;
+ text-decoration: none;
+}
+.navbutton{
+ color: darkslateblue;
+ text-decoration: none;
+ padding: 10px;
+ border: 1px solid white;
+ border-radius: 10%;
+}
+body > main >article{
+ width: 70%;
+ margin:auto; /*auto automatically sets the margins to center everything*/
+}
+#main-content{
+ display: flex;
+}
+form {
+ text-align: center;
+}
+h2{
+ text-align: center;
+}
+body > footer {
+ background-color: lightblue;
+ display: flex;
+}
+
+img{
+ border-radius: 100%; /*altering the percentage alters the shape of the photo*/
+}
+/* CSS; styles applied to a particular tag, cascade down to tags nested within it. */
+/* the selector specificity has a strong overriding mechanism, in that it can override a colour that's already there for the particular tag */
+/* selectors are basically what we use to select/target a specific HTML element we want to style in css */
+/* how do we stop the nested tags from being affected by changes made to the parent tag? */
+/* our focus will be mostly on type selectors, class selectors, id selectors and child selectors */
+/* every single html lelement is enclosed within a box model. 3 parts: margins, paddings, content itself. Padding is the space between the content and the borders around it */
+/* margins will overlap but paddings won't */
+/* block tags take up the entirety of the width of the screen. <li> tag is a block tag */
+/* in-line tags take up as much space as the text takes up. anchor tags are in-line tags. you can hide in-line tags within block tags.  */
+/*  in-line block elements allow you to define the height and the width and dont take up the entirety of the width */
+/* google which tags use in-line, block and in-line-block tags so you can use them appropriately */
+/* when inspecting the form part, we see that it takes up the entirety of the width, simply because its a block tag, but the individual components of the form are in-line tags, allowing for us to center them and ultimately center the form  */
+#footer-ul {
+ display: flex;
+ list-style: none;
+}
+#footer-ul>div>li{
+ margin-left: 12px;
+}
+#footer-ul>div>li>a{
+ color: lightblue;
+ text-decoration: none;
+ border: 1px solid darkslateblue;
+
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" 
+rel="stylesheet">
+    <!-- link tag for css should primarily be in the head tag because once the entire page is loaded, the head tag will get read in first, allowing for the css features to be applied as soon as the webpage opens. The higher the link tag, the faster the css file will kick in-->
+     <!-- we can still access the css file throgh a folfer through the code href="file/style.css". This is to allow us to create as many files as possible that target specific parts of the html file in terms of styling it -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniQuip</title> 
+</head>
+<body>
+    <header>
+        <!-- content of the header goes here -->
+         <h1 id="logo">UniQuip</h1>
+         <nav>
+            <ul id="nav-ul">
+                <li>
+                    <a href="" class="navbutton">Home</a>
+                </li>
+                <li>
+                    <a href="" class="navbutton">What We do</a>
+                </li>
+                <li>
+                    <a href="" class="navbutton">Talk to Us!</a>
+                </li>
+            </ul>
+         </nav>
+         <!-- another alternative to creating the navigation bar links
+          syntax: nav>ul>li*3>a + TAB
+         <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href=""></a>Contact Us</li>
+            </ul>
+         </nav>-->
+    </header>
+    <main>
+        <!-- main content of the webiste can go here -->
+        <div id="main-content">
+            <aside>
+                <section>
+                    <h4>Filter by Students</h4>
+                    <nav>
+                        <ul>
+                            <li><a href=""></a>Filter for Domestic Students</li>
+                            <li><a href=""></a>Filter for International Students</li>
+                            <li><a href=""></a>Filter for Exchange Students</li>
+                        </ul>
+                    </nav>
+                </section>
+                
+            </aside>
+            <div>
+                <article>
+                    <header>
+                        <!-- Article's header goes here -->
+                         <h2> <!--Title/Heading og blog post/article--> Struggling to make friends at uni? </h2>
+                         <h3> Read time: 5 minutes <!--you can add things like author name ect, anything needed in a header tag, date as well--> </h3>
+                        
+                         <!-- ideally h1 tags should just be one and you can use h2 and h3 tags as frequently as you'd like -->
+                         <!-- you should have h2's and h3's for every article or product for your website -->
+                    </header>
+                         <main>
+                            <p>Starting uni this fall? Come along & let's have a chat!</p>
+                            <p>We all know how daunting being a new student can be. From getting along with flatmates, to making new friends, to earning a few extra bucks, UniQuip aims to help settling into uni easier, a little less intimidating and fun!</p>
+                            <p>Let's get the ball rolloing, shall we?</p>
+                            <!-- we need multiple paragraph tags to create various paragraphs otherwise evrything will be in one paragraph even if we hit enter in a single paragraph tag to create a new paragraph, it will show one whole paragraph in the website -->
+                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum ratione vero natus doloremque officia modi ipsum aliquam iure, sed repellendus quisquam, aperiam repudiandae quibusdam nemo labore, obcaecati dolor maxime quidem. Sit aliquam delectus at animi voluptatibus hic reiciendis, fugit, ab suscipit voluptate impedit deserunt magni soluta et aspernatur iste praesentium amet fugiat! Tempore, maiores. </p>
+                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae beatae tempora quam iusto dolorum, dolores nesciunt. Recusandae excepturi saepe impedit ut porro ad quaerat! Tempora, commodi? Enim optio quasi sunt!</p>
+                             <!-- this is place holder text. adding a number at the end of the lorem placeholder text will give you that exact number of words as placeholder text. Or alternatively you can just use lorem text on its own  -->
+                              
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quibusdam recusandae sequi aperiam, dolor ullam quos! Necessitatibus assumenda sed, laborum architecto possimus illo quidem voluptates quam eius, rem vero ea aut voluptatem cumque culpa reprehenderit qui neque nesciunt! Nesciunt blanditiis maxime ut a reiciendis sunt debitis modi perspiciatis minima voluptatum.</p>
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem necessitatibus facilis sequi accusamus aliquam aperiam unde nihil assumenda rem tempore maiores, nesciunt esse cumque rerum.</p>
+                         </main>
+                         <footer>
+                            <h2>Author: Your favourite UniQuipper, Naomi!</h2>
+                            <img src="https://placebear.com/100/100" alt="A profile pic of a bear"> <!--this website gereates random pictures of bears and depending on the size youve put in, it will put an image accordingly to that size--><!--this website offers placeholder pictures so we can envisage how our whole website will look like once complete--> <!--alt will give text of what a picture should show in case it doesn't show and it will also be read in for people with disabilities, semantic handling-->
+                            <h3>Last posted: 01/08/2024</h3> <!--to generate these hyper texts dynamicaaly, we need programming languages like python or javascript(to fix it front-end)--> 
+                            <a href="" target="_blank">Connect with me on Insta</a>
+                            <!--when you hover over the link, you should get a preview of the link before clicking it to ensure its taking you to the right page-->
+                            <!--using the target extension allows us to modify the links to allow for links to open on a separate tab or window rather than to occupy the existing -->
+                         </footer>
+                    
+                </article>
+            </div> 
+
+        </div>
+        
+        
+         <!--adding more article tags gives us a glimpse of what a whole website with many articles will look like -->
+        
+         <!-- create a form -->
+          <hr> 
+          <!--this creates a solid horizontal line to create a distinction between fields-->
+          <h2>Sign up for our Weekly Newsletter, for some cool Uni Tips!</h2>
+          <form action="" method="">
+            <!-- forms should have 2 attributes at a time ie 'action' & 'method', where method sends/processes data to the server and action determines the location or path we're sending the data in the form to ie a URL   -->
+             <label for="first_name">First Name:</label>
+             <input type="text" id="first_name" name="first_name" required >
+             <br>
+             
+             <label for="last_name">Last Name:</label>
+             <input type="text" id="Last_name" name="last_name" required >
+             <br>
+
+             <label for="email">Email:</label>
+             <input type="email" id="email" name="email" required >
+             <br>
+             
+             <label for="password">Password:</label>
+             <input type="password" id="password" name="password" required > <!-- all this does is to hide email from onlookers but it does not actually encrypt the password so you need to add a security layer to it-->
+             <br>
+             <label for="Gender">Gender:</label>
+             <select name="Gender" id="">Gender
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+             </select>
+             <br>
+             <label for="country/region">Country/Region:</label>
+             <select name="country" id="country">
+                <option value="UK/Ireland">UK/Ireland</option>
+                <option value="EU">EU</option>
+                <option value="Overseas">Overseas</option>
+                
+
+                <!--for radio, the name must match the for label-->
+             </select>
+             <br>
+
+             <label for="bio">Biography:</label>
+             <textarea name="bio" id="bio" cols="30" rows="5"></textarea>
+             <br>
+             <input type="checkbox" id="subscribe" name="subscribe">
+             <label for="subscribe">Subscribe to our newsletter!</label>
+             <br>
+
+             <input type="submit" value="Send!">
+
+             
+          </form>
+          <hr>
+    </main>
+    
+    <footer>
+        <!-- footer goes here -->
+         <!--DIV's are usually used to create the whole structure or layout of the website without disrupting the flow of the content-->
+         <h2>UniQuip</h2>
+         <section>
+            <nav>
+                <ul id="footer-ul">
+                    <div>
+                        <il><a href="">Home</a></il>
+                        <il><a href="">What We do</a></il>
+                        <il><a href="">Talk to Us</a></il>
+                    </div>
+                    <div>
+                        <il><a href="">Privacy Policy</a></il>
+                        <il><a href="">Terms & Conditions</a></il>
+                        <il><a href="">Cookie Policy</a></il>
+                    </div>
+                    <!--we can grab the different DIV tags and add different stylings to it using CSS, eg we can separate columns using the DIV tags-->
+                </ul>
+            </nav>
+         </section>
+    </footer>
+
+</body>
+</html>
